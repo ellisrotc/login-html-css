@@ -1,0 +1,142 @@
+/* Estilos generales */
+body {
+font-family: sans-serif;
+background-color: #f4f4f4;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+}
+
+.login-container {
+background-color: #fff;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+width: 400px;
+text-align: center;
+}
+
+h1 {
+color: #333;
+margin-bottom: 20px;
+}
+
+/* Estilos para el inicio de sesión social */
+.social-login {
+margin-bottom: 20px;
+}
+
+.google-btn {
+background-color: #4285f4;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+.google-btn:hover {
+background-color: #357ae8;
+}
+
+.google-btn img {
+margin-right: 10px;
+}
+
+/* Estilos para el separador "O" */
+.separator {
+color: #777;
+margin: 20px 0;
+position: relative;
+text-align: center;
+}
+
+.separator span {
+background-color: #fff;
+padding: 0 10px;
+position: relative;
+z-index: 1;
+}
+
+.separator::before,
+.separator::after {
+content: '';
+position: absolute;
+top: 50%;
+width: 45%;
+height: 1px;
+background-color: #ccc;
+transform: translateY(-50%);
+}
+
+.separator::before {
+left: 0;
+}
+
+.separator::after {
+right: 0;
+}
+
+/* Estilos para el inicio de sesión con credenciales */
+.credentials-login {
+text-align: left;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 5px;
+color: #555;
+font-weight: bold;
+}
+
+.form-group input {
+width: calc(100% - 12px);
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 16px;
+box-sizing: border-box;
+}
+
+.login-btn {
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 12px 20px;
+cursor: pointer;
+font-size: 18px;
+width: 100%;
+transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+background-color: #0056b3;
+}
+
+/* Estilos para "¿Olvidaste tu contraseña?" */
+.forgot-password {
+text-align: right;
+margin-top: 10px;
+}
+
+.forgot-password a {
+color: #007bff;
+text-decoration: none;
+}
+
+.forgot-password a:hover {
+text-decoration: underline;
+}
